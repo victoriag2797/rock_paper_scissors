@@ -1,0 +1,17 @@
+.wholething {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    height: 10%;
+    width: 10%;
+}
