@@ -1,17 +1,64 @@
-.wholething {
+.wholething{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-.results {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
-img {
+.header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    line-height: 0.2;
+}
+
+.result{
+    display: flex;
+    margin-left: 6%;
+    margin-right: 40%;
+    padding-left: 0%;
+    flex-direction: column;
+}
+
+.centerresult{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.wholeresult{
+    display: flex;
+    border: solid red 3px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 3%;
+    flex-direction: column;
+    padding-left: 0%;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    line-height: 0.2;
+}
+
+.objects{
+    display: flex;
+    flex-direction: row;
+}
+
+.rock{
+    border: solid red 3px;
+}
+
+img{
     height: 10%;
     width: 10%;
+}
+
+.nextgameandplayagain{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
