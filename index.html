@@ -10,46 +10,46 @@
     <div class="wholething">
         <div class="header">
         <h1>ROCK, PAPER, SCISSORS</h1>
-        <p>Best of 5 Wins!</p>
         </div>
         <div class="score">
-            <p>Score: , Your Score: , Robot's Score: </p>
+            <p id="allscore">Ties: </p><p id="winscore">Your Score: </p><p id="losescore">Robot's Score: </p>
         </div>
         <div class="wholeresult">
             <div class="result">
-                <p>Results: </p>
-                <p>Your Choice: </p>
-                <p>Robot's Choice: </p>
+                <p id="gameresult">Results: </p>
+                <p id="yourresult">Your Choice: </p>
+                <p id="robotresult">Robot's Choice: <span id="choice"></span></p>
             </div>
             <div class="centerresult">
-                <a><img src="https://cdn.chl.ca/archive/chl.uploads/app/uploads/chl/2017/06/23231803/Hischier1stNJ.jpg" alt = "swiss princess"</a>
-                <h1>YOU WON/LOST!</h1>
+                <a><img id="changingImage" src="https://htmlcolors.com/color-image/f5f5f5.png" alt = "smokeywhite"</a>
+                <h1 id="finalresult">YOU WON/LOST!</h1>
             </div>
         </div>
         <div class="objects">
-            <div class="rock">
-                <button>
+            <div class="rockbutton">
+                <button id="generate">
                     <a><img src="https://www.outdooressentialproducts.com/-/media/project/ufpi/outdoor-essentials/products/images/landscape/rocks/204922_small-landscape-rock-tan/outdoor-essentials_tan-landscape-small-rock_image_204922_website.png?h=1000&iar=0&w=1000&sc_lang=en&hash=54785A7CF8CEABBF39F0789A63166424" alt = "rock"</a>
                     <p>ROCK</p>
                 </button>
             </div>
-            <div class="paper">
-                <button>
+            <div class="paperbutton">
+                <button id="generate2">
                     <a><img src="https://plaincanvascollective.com/cdn/shop/products/PearlGold_Front.png?v=1664598118" alt = "paper"</a>
                     <p>PAPER</p>
                 </button>
             </div>
-            <div class="scissors">
-                <button>
+            <div class="scissorsbutton">
+                <button id="generate3">
                     <a><img src="https://rowleycompany.scene7.com/is/image/rowleycompany/rowley-general-purpose-right-hand-scissors-gpsweb?$s7Product$&fmt=png-alpha" alt = "scissors"</a>
                     <p>SCISSORS</p>
                 </button>
             </div>
         </div>
+        <p id="debug"></p>
         <div class="nextgameandplayagain">
             <button>Next Game!</button>
         </div>
     </div>
-    <script> src="script.js" </script>
+    <script src="script.js"></script>
 </body>
 </html>

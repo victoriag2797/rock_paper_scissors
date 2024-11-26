@@ -1,10 +1,13 @@
 .wholething{
     display: flex;
     flex-direction: column;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-shadow: 2px 2px 8px #4c507688;
 }
 
 body{
     background-color: rgb(215, 217, 233);
+    background-image: linear-gradient(to bottom right, rgb(215, 217, 233) , rgb(163, 163, 205));
 }
 
 .header{
@@ -13,6 +16,7 @@ body{
     text-align: center;
     flex-direction: column;
     line-height: 0.2;
+    margin-top: 1%;
 }
 
 .result{
@@ -41,6 +45,14 @@ body{
     padding-left: 0%;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+    
+    
+}
+
+.wholeresult:hover{
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .score{
@@ -67,21 +79,21 @@ button{
 }
 
 button:hover {
-    background-color: rgb(172, 176, 214); 
-    color: white;
-    border: solid 3px rgb(172, 176, 214);
+    background-color: rgb(222, 223, 237); 
+    color: rgb(95, 99, 159);
+    border: solid 3px rgb(222, 223, 237);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.rock{
+.rockbutton{
     margin-left: 10%;
 }
 
-.scissors{
+.scissorsbutton{
     margin-right: 10%;
 }
 
-.paper{
+.paperbutton{
     margin-bottom: 1%;
 }
 
