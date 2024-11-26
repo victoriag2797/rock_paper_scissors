@@ -32,6 +32,13 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-left: 10%;
+}
+
+.finalresultcontainer{
+    display: flex;
+    justify-content: center;
+    padding-right: 17%;
 }
 
 .wholeresult{
@@ -60,7 +67,7 @@ body{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    line-height: 0.1;
+    line-height: 0.0001;
 }
 
 .objects{

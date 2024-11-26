@@ -1,10 +1,9 @@
-let winscoreContainer = document.querySelector('.winscore')
-let losescoreContainer = document.querySelector('.losescore')
-let allscoreContainer = document.querySelector('.allscore')
+let winscoreContainer = document.getElementById('winscore');
+let losescoreContainer = document.getElementById('losescore');
+let allscoreContainer = document.getElementById('allscore');
 let winscore = 0;
 let losescore = 0;
 let allscore = 0;
-
 
 document.getElementById("generate").addEventListener("click", function() {
     let randomNumber = Math.floor(Math.random() * 3) + 1; //Defines
@@ -88,19 +87,26 @@ let rockFunction = () => {
 
         if (yourresult === robotresult) {
         let gameresultContainer = document.getElementById('gameresult');
-        gameresultContainer.textContent = "Results: Tie";
-        gameresult = "Results: Tie";
+        gameresultContainer.textContent = "Result: Tie";
+        gameresult = "Result: Tie";
         allscore +=1;
         } else if ((yourresult === 1 && robotresult === 2)) {
             let gameresultContainer = document.getElementById('gameresult');
-        gameresultContainer.textContent = "Results: Loss";
-        gameresult = "Results: Loss";
+        gameresultContainer.textContent = "Result: Loss";
+        gameresult = "Result: Loss";
         losescore +=1;
+        if (losescore === 3) {
+            alert("Congratulations! You Lost!");
+        }
         } else if ((yourresult === 1 && robotresult === 3)) {
             let gameresultContainer = document.getElementById('gameresult');
-            gameresultContainer.textContent = "Results: Win";
-            gameresult = "Results: Win";
+            gameresultContainer.textContent = "Result: Win";
+            gameresult = "Result: Win";
             winscore +=1;
+            if (winscore === 3) {
+                document.getElementById('finalresult').innerText = "YOU WON!";
+                document.getElementById('changingImage').src = "https://www.si.com/.image/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/MTY4MTA2NDIxNzM3MTcwMTkz/nico-hischier-devils-no1-1300jpg.jpg";
+            }
         }
 
         document.getElementById("gameresult").textContent = gameresult;
@@ -119,14 +125,21 @@ let paperFunction = () => {
         let robotresult = Math.floor(Math.random() * 3) + 1;
 
         if (yourresult === robotresult) {
-            gameresult = "Results: Tie";
+            gameresult = "Result: Tie";
             allscore +=1;
         } else if ((yourresult === 2  && robotresult === 3)) {
-            gameresult = "Results: Loss";
+            gameresult = "Result: Loss";
             losescore +=1;
+            if (losescore === 3) {
+                alert("Congratulations! You Lost!");
+            }
         } else if ((yourresult === 2  && robotresult === 1)) {
-            gameresult = "Results: Win";
+            gameresult = "Result: Win";
             winscore +=1;
+            if (winscore === 3) {
+                document.getElementById('finalresult').innerText = "YOU WON!";
+                document.getElementById('changingImage').src = "https://www.si.com/.image/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/MTY4MTA2NDIxNzM3MTcwMTkz/nico-hischier-devils-no1-1300jpg.jpg";
+            }
         }
 
         document.getElementById("gameresult").textContent = gameresult;
@@ -144,14 +157,22 @@ let scissorsFunction = () => {
         let robotresult = Math.floor(Math.random() * 3) + 1;
 
         if (yourresult === robotresult) {
-            gameresult = "Results: Tie";
+            gameresult = "Result: Tie";
             allscore +=1;
         } else if ((yourresult === 3  && robotresult === 1)) {
-            gameresult = "Results: Loss";
+            gameresult = "Result: Loss";
             losescore +=1;
+            if (losescore === 3) {
+                alert("Congratulations! You Lost!");
+                
+            }
         } else if ((yourresult === 3  && robotresult === 2)) {
-            gameresult = "Results: Win";
+            gameresult = "Result: Win";
             winscore +=1;
+            if (winscore === 3) {
+                document.getElementById('finalresult').innerText = "YOU WON!";
+                document.getElementById('changingImage').src = "https://www.si.com/.image/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/MTY4MTA2NDIxNzM3MTcwMTkz/nico-hischier-devils-no1-1300jpg.jpg";
+            }
         }
 
         document.getElementById("gameresult").textContent = gameresult;
@@ -162,3 +183,12 @@ let scissorsFunction = () => {
 }
 
 scissorsFunction();
+
+document.getElementById("resetButton").addEventListener("click", resetGame);
+
+function resetGame() {
+    winscore = 0;
+    losescore = 0;
+    allscore = 0;
+    document.getElementById('changingImage').src =
+}
