@@ -7,31 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+
     <div class="wholething">
         <div class="header">
         <h1>ROCK, PAPER, SCISSORS</h1>
         </div>
-        <div class="score">
-            <p id="allscore">Ties: </p>
+        <div class="score"> <b>
+            <p id="allscore">Ties: 0</p>
             <div class="importscore">
-                <p id="winscore">Your Score: </p>
-                <br> <p id="losescore">Robot's Score: </p>
+                <p id="winscore">Your Score: 0</p>
+                <br> <p id="losescore">Robot's Score: 0</p> </b>
             </div>
         </div>
         <div class="wholeresult">
-            <div class="result">
+            <div class="result"> <b>
                 <p id="gameresult">Result: </p>
                 <p id="yourresult">Your Choice: </p>
-                <p id="robotresult">Robot's Choice: <span id="choice"></span></p>
+                <p id="robotresult">Robot's Choice: <span id="choice"></span></p> </b>
             </div>
             <div class="centerresult">
-                <a><img id="changingImage" src="https://htmlcolors.com/color-image/f5f5f5.png" alt = "smokeywhite"</a>
+                <div class="changeImage">
+                    <a><img id="changingImage" src="https://color-hex.org/colors/fef3e2.png" alt = "smokeywhite"</a>
+                </div>
                 <div class="finalresultcontainer">
                     <h1 id="finalresult"></h1>
                 </div>
             </div>
         </div>
-        <div class="objects">
+        <div class="objects"> 
             <div class="rockbutton">
                 <button id="generate">
                     <a><img src="https://www.outdooressentialproducts.com/-/media/project/ufpi/outdoor-essentials/products/images/landscape/rocks/204922_small-landscape-rock-tan/outdoor-essentials_tan-landscape-small-rock_image_204922_website.png?h=1000&iar=0&w=1000&sc_lang=en&hash=54785A7CF8CEABBF39F0789A63166424" alt = "rock"</a>
@@ -58,3 +64,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
